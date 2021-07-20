@@ -15,12 +15,6 @@
 }
 
 
-/* ----- NAV -------- */
-
-header{
-    background: skyblue;
-}
-
 
 /** spaces **/
 
@@ -36,7 +30,14 @@ header{
     padding: 0.5rem 1rem;
 }
 
+/** containers **/
+.container {
+    padding: 0rem 1rem;
+}
 
+.container-center{
+    margin:auto;
+}
 
 /** lists **/
 
@@ -92,11 +93,32 @@ header{
     border-bottom: 2px solid var(--primary-color)
 }
 
-@media (max-width: 675px){
-    
+
+/* header */
+
+.hero{
+    padding: 2rem;
+    margin-top:1rem;
 }
 
-@media (min-width: 675px) {
+.hero-image{
+    max-width:350px;
+    display: block;
+    margin:auto
+}
+
+.hero-heading{
+    color:var(--dark-gray);
+    padding-top:1rem;
+    text-align: center;
+}
+
+.hero-sub-heading{
+    text-align: center;
+}
+
+
+@media (min-width: 760px) {
     
     
     .list-item-inline{
@@ -107,5 +129,25 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .hero{
+        display: flex;   
+        max-width:900px;
+        margin:auto;
+        margin-top:3rem;
+    }
+
+    .hero-heading{
+        order:1;
+        text-align: left;
+    }
+
+    .hero-sub-heading{
+        text-align: left;
+    }
+
+    .hero-image{
+        order:2;
     }
 }
