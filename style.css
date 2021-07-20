@@ -167,8 +167,8 @@
 .section-technologies{
     background: var(--light-gray);
     
-    height: 80vh;
-    padding: 2rem;
+    /* height: 80vh; */
+    padding: 3rem 2rem 6rem 2rem;
     
 }
 
