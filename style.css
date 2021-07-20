@@ -6,6 +6,10 @@
     --dark-gray:#6B7280;
     --offwhite: #d7f3fa;
     --light-blue:#EFF6FF;
+    --baby-pink: #FFB6C1;
+    --purple: #A5B4FC;
+    --pink:#FB9E9F;
+    /* #EE6C8A */
 }
 
 *{
@@ -28,6 +32,31 @@
     box-sizing: border-box;
     text-decoration: none;
     padding: 0.5rem 1rem;
+}
+
+.link-primary{
+    background-color: var(--primary-color) ;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    padding: 14px;
+    font-size: 16px;
+    color: white;
+    box-shadow: 0px 6px 18px -5px var(--primary-color);
+    text-align:center;  
+    cursor: pointer;
+
+    margin: 1rem;
+}
+
+.link-pink{
+    background-color: var(--baby-pink) ;
+    box-shadow: 0px 6px 18px -5px var(--baby-pink);
+}
+
+.link-purple{
+    background-color: var(--purple) ;
+    box-shadow: 0px 6px 18px -5px var(--purple);
 }
 
 /** containers **/
@@ -90,7 +119,8 @@
     margin: 1px;
     margin-bottom: 3px ;
     
-    border-bottom: 2px solid var(--primary-color)
+    border-bottom: 2px solid var(--baby-pink);
+    /* border-bottom: 2px solid var(--purple); */
 }
 
 
@@ -98,7 +128,9 @@
 
 .hero{
     padding: 2rem;
-    margin-top:1rem;
+    /* margin-top:1rem; */
+    margin:1rem 0rem 2rem 0rem;
+    /* height:50vh; */
 }
 
 .hero-image{
@@ -107,9 +139,10 @@
     margin:auto
 }
 
-.hero-heading{
-    color:var(--dark-gray);
-    padding-top:1rem;
+.hero-heading {
+    color: var(--pink);
+    /* color:var(--purple); */
+    padding-top:3rem;
     text-align: center;
 }
 
@@ -117,7 +150,112 @@
     text-align: center;
 }
 
+.know-more{
+    margin-left:0;
+    padding: 0.75rem 2rem 0.75rem 2rem ;
+    background: var(--pink);
+    box-shadow: 0px 6px 18px -5px var(--pink);
+    display: none;
+}
 
+/** Sections **/
+
+.section-technologies{
+    background: #F9FAFB;
+    
+    height: 80vh;
+    padding: 2rem;
+    
+}
+
+.section-heading{
+    color: black;
+    padding-top:1rem;
+    text-align: center;
+    
+}
+
+.section-sub-heading{
+    color:var(--dark-gray);
+    padding-top:1rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+.section-info{
+    margin-top:1rem;
+    padding-top: 1rem;
+}
+
+/** Technologies section**/
+
+.tech-row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.tech-card{
+    /* border-radius: 1rem; */
+    padding:1rem;
+    background: white;
+    width: 4rem;
+    box-shadow: 25px #6B7280;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tech-icon{
+    width:3rem;
+    height:3rem;
+    margin: auto;
+}
+
+.tech-name{
+    text-align: center;
+    color:var(--dark-gray);
+    margin-top: 0.5rem;
+}
+
+/* Work */
+.section-work{
+    background: white;
+    padding: 2rem;
+}
+
+.work-card{
+    /* border: 1px solid black; */
+    box-shadow: 0 1px 25px rgba(146,161,176,.15);
+    margin:1rem;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.work-title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.work-subtitle{
+    margin:1rem;
+    text-align: justify;
+}
+
+.work-image{
+    width:100%;
+    object-fit: cover;
+}
+
+.tech-image{
+    display: none;
+}
 @media (min-width: 760px) {
     
     
@@ -134,20 +272,58 @@
     .hero{
         display: flex;   
         max-width:900px;
-        margin:auto;
-        margin-top:3rem;
+        margin:5rem auto 10rem auto; 
+        
+        /* margin-top:5rem; */
     }
 
     .hero-heading{
+        text-align: left;
+    }
+
+    .hero-heading .section-heading{
         order:1;
         text-align: left;
     }
 
     .hero-sub-heading{
         text-align: left;
+        margin-bottom: 2rem;
     }
 
     .hero-image{
         order:2;
+    }
+
+    .know-more{
+        display: initial;
+    }
+
+    .section-info{
+        max-width: 900px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .section-work{
+        max-width: 1100px;
+    }
+    .section-work .section-info{
+        display: flex;
+        /* max-width: 100px; */
+    }
+
+    .mt-3{
+        margin-top: 2rem;
+    }
+
+    .tech-image{
+        display: inline;
+        margin: auto 0 auto 0;
+        width:45%;
+    }
+    .techs{
+        width:45%;
     }
 }
