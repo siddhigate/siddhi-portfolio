@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+
+:root{
+    --primary-color:black;
+    --dark-gray:#6B7280;
+    --offwhite: #d7f3fa;
+    --light-blue:#EFF6FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ----- NAV -------- */
+
+header{
+    background: skyblue;
+}
+
+
+/** spaces **/
+
+.margin-md {
+    margin: 2rem;
+}
+
+
+/** links **/
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+
+
+/** lists **/
+
+.list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0.25rem;
+}
+
+
+/** navigation **/
+
+.navigation {
+    
+    color: var(--primary-color);
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    margin: auto;
+    box-shadow: 0 1px 4px rgba(146,161,176,.15);
+    
+    padding:0.5rem 2rem 0.5rem 2rem;
+    max-width: 900px;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+}
+
+.nav-brand a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .link {
+    color: var(--primary-color);
+}
+
+.navigation .link-active {
+    font-weight: bold;
+    margin: 1px;
+    margin-bottom: 3px ;
+    
+    border-bottom: 2px solid var(--primary-color)
+}
+
+@media (max-width: 675px){
+    
+}
+
+@media (min-width: 675px) {
+    
+    
+    .list-item-inline{
+        padding: 0rem 0.5rem;
+    }
+
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
