@@ -4,6 +4,7 @@
 :root{
     --primary-color:black;
     --dark-gray:#6B7280;
+    --light-gray:#F9FAFB;
     --offwhite: #d7f3fa;
     --light-blue:#EFF6FF;
     --baby-pink: #FFB6C1;
@@ -161,7 +162,7 @@
 /** Sections **/
 
 .section-technologies{
-    background: #F9FAFB;
+    background: var(--light-gray);
     
     height: 80vh;
     padding: 2rem;
@@ -256,6 +257,38 @@
 .tech-image{
     display: none;
 }
+
+
+/* footer */
+
+.footer{
+    background-color:var(--light-gray);
+    background-color: white;
+    padding:2rem 0rem;
+    text-align: center;
+    color:black;
+    border-top-right-radius:1rem;
+    box-shadow: 0 1px 25px #E5E7EB;
+    margin-top: 3rem;
+}
+
+.footer .footer-header{
+    font-weight: bold;
+    font-size: large;
+    padding-inline-start:0px;
+}
+.footer .link{
+    color:black;
+}
+
+.footer ul{
+    padding-left:0px;
+}
+
+.footer-icon{
+    width:2rem;
+}
+
 @media (min-width: 760px) {
     
     
