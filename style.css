@@ -46,7 +46,21 @@
     box-shadow: 0px 6px 18px -5px var(--primary-color);
     text-align:center;  
     cursor: pointer;
+    margin: 1rem;
+}
 
+.link-secondary{
+    background-color: white ;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    padding: 14px;
+    font-size: 16px;
+    color: var(--purple);
+    box-shadow: 0px 6px 18px -5px var(--dark-gray);
+    text-align:center;  
+    cursor: pointer;
+    box-shadow: 0px 6px 18px -5px #c8d1e2;
     margin: 1rem;
 }
 
@@ -58,6 +72,14 @@
 .link-purple{
     background-color: var(--purple) ;
     box-shadow: 0px 6px 18px -5px var(--purple);
+}
+
+.link-secondary-purple{
+    color: var(--purple)
+}
+
+.link-secondary-pink{
+    color: var(--pink)
 }
 
 /** containers **/
@@ -137,7 +159,9 @@
 .hero-image{
     max-width:350px;
     display: block;
-    margin:auto
+    margin:auto;
+    object-fit: cover;
+    width:100%;
 }
 
 .hero-heading {
@@ -205,7 +229,7 @@
     padding:1rem;
     background: white;
     width: 4rem;
-    box-shadow: 25px #6B7280;
+    box-shadow: 25px #c8d1e2;
     
     display: flex;
     flex-direction: column;
@@ -338,6 +362,16 @@
         display: initial;
     }
 
+    
+    .hero-projects{
+        margin:0 auto 0 auto;
+        max-width: 750px;
+    }
+
+    .links{
+        display: flex;
+    }
+
     .section-heading{
         font-size: 2.5rem;
     }
@@ -350,8 +384,7 @@
     .section-info{
         max-width: 900px;
         margin: auto;
-        display: flex;
-        justify-content: space-between;
+        
     }
     
     .section-work{
@@ -373,5 +406,10 @@
     }
     .techs{
         width:45%;
+    }
+
+    .project-row{
+        display: flex;
+        justify-content: space-between;
     }
 }
