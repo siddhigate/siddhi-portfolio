@@ -319,6 +319,25 @@
     width:2rem;
 }
 
+
+.mt-3{
+    margin-top: 2rem;
+}
+
+.hero-blogs{
+    margin-bottom: 0;
+}
+
+.section-blog{
+    margin-top:0rem;
+    padding-top:0rem;
+}
+
+.section-projects{
+    margin-top:0rem;
+    padding-top:0rem;
+}
+
 @media (min-width: 760px) {
     
     
@@ -395,6 +414,16 @@
         /* max-width: 100px; */
     }
 
+    .section-blog{
+        margin-top:2rem;
+        padding-top:2rem;
+    }
+    
+    .section-projects{
+        margin-top:2rem;
+        padding-top:2rem;
+    }
+    
     .mt-3{
         margin-top: 2rem;
     }
