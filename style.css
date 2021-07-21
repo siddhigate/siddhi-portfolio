@@ -414,6 +414,10 @@
         /* max-width: 100px; */
     }
 
+    .section-info{
+        display: flex;
+        justify-content: space-between;
+    }
     .section-blog{
         margin-top:2rem;
         padding-top:2rem;
