@@ -272,6 +272,11 @@
     font-size: 1.8rem;
 }
 
+.project-title{
+    text-align: center;
+    font-size: 700;
+    font-size: 1.5rem;
+}
 .work-subtitle{
     margin:1rem;
     text-align: justify;
@@ -444,5 +449,9 @@
     .project-row{
         display: flex;
         justify-content: space-between;
+    }
+
+    .work-card{
+        width:50%;
     }
 }
