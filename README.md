@@ -10,3 +10,8 @@ My portfolio website built using HTML and CSS
 - CSS
 
 [View Portfolio](https://siddhigate.netlify.app/)
+
+
+![Portfolio sreenshot](assets/projimages/portfolioss.png)
+
+
