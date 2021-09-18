@@ -1,3 +1,5 @@
+<!--- Found your profile on Twitter. Since your email was unavailable, this is the fastest way to contact any dev. 
+Do you want to work on a personal project which I am working on? Need some help from the UI and branding side. --->
 # Portfolio website
 
 My portfolio website built using HTML and CSS
